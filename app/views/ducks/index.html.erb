@@ -1,0 +1,5 @@
+<h1>All Ducks</h1>
+
+<% @ducks.each do |duck| %>
+  <h5><%= duck.name %> <%= link_to 'show', duck_path(duck.id) %></h5>
+<% end %>
