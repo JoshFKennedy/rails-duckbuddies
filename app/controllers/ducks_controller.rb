@@ -1,5 +1,5 @@
 class DucksController < ApplicationController
-  before_action :find_list, only: [:show]
+  before_action :find_duck, only: [:show]
 
   def index
     @ducks = Duck.all
