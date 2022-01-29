@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do
+  Duck.create(name: Faker::GreekPhilosophers.name, description: Faker::GreekPhilosophers.quote,
+              nationality: Faker::Nation.nationality, age: Faker::Number.between(from: 18, to: 50),
+              photo: Faker::LoremPixel.image(size: "50x60", is_gray: false, category: 'animals'))
+end
