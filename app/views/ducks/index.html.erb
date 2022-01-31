@@ -1,5 +1,16 @@
-<h1>All Ducks</h1>
+<h1 class="text-center">Duck Buddies</h1>
 
 <% @ducks.each do |duck| %>
-  <h5><%= link_to duck.name, duck_path(duck.id) %></h5>
+  <div class="card-duck">
+    <%= image_tag duck.photo %>
+    <div class="card-infos">
+      <div>
+        <h2><%= duck.name %></h2>
+        <p><%= duck.description %></p>
+      </div>
+      <div class="card-bottom">
+        <h2><%= link_to "More info ", duck_path(duck.id) %></h2>
+      </div>
+  </div>
+</div>
 <% end %>
