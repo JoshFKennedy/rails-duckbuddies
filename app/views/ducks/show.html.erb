@@ -22,4 +22,6 @@
   <%= @duck.description %>
 </p>
 
+<%= link_to 'Book this duck', new_duck_booking_path(@duck), class: "nav-link" %>
+
 <%= link_to 'Back', ducks_path %>
