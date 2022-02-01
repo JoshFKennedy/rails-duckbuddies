@@ -1,27 +1,30 @@
-<p>
-  <%= image_tag @duck.photo, :class => "avatar-xlarge" %>
+<p class="text-center">
+  <%= image_tag @duck.photo, :class => "avatar-profile-xlarge" %>
 </p>
 
-<p>
+<p class="text-center">
   <strong>Name:</strong>
   <%= @duck.name %>
 </p>
 
-<p>
+<p class="text-center">
   <strong>Nationality:</strong>
   <%= @duck.nationality %>
 </p>
 
-<p>
+<p class="text-center">
   <strong>Age:</strong>
   <%= @duck.age %>
 </p>
 
-<p>
+<p class="text-center">
   <strong>Description:</strong>
   <%= @duck.description %>
 </p>
 
-<%= link_to 'Book this duck', new_duck_booking_path(@duck), class: "nav-link" %>
-
-<%= link_to 'Back', ducks_path %>
+<div class="text-center">
+  <%= link_to 'Book this duck', new_duck_booking_path(@duck) %>
+</div>
+<div class="text-center">
+  <%= link_to 'Back', ducks_path %>
+</div>
