@@ -15,7 +15,6 @@ class BookingsController < ApplicationController
   end
 
   def create
-    # raise
     @booking = Booking.new(booking_params)
     @duck = Duck.find(params[:duck_id])
     @booking.duck = @duck
