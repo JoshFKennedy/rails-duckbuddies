@@ -18,27 +18,21 @@ $pink: #F1C9C2;
     color: $yellow;
     text-decoration: underline;
   }
-
-$lightblue: ##d8e4f7;
-$pink: #F1C9C2;
+}
 
 .navbar {
   justify-content: space-between;
-
 }
 
 .navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar .navbar-brand img {
-
 .navbar-blue {
   background-color: $lightblue;
 }
 
 .navbar .navbar-brand img {
-
   width: 40px;
 }
 
