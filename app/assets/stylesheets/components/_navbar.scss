@@ -1,23 +1,50 @@
 $navy: #1F3D51;
 $coral: #FF8860;
 $yellow: #F7D635;
-$lightblue: #D6E8D9;
+$lightblue: #d8e4f7;
 $pink: #F1C9C2;
 
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: transparent;
-  transition: 0.5s background-color ease;
+  background-color: $lightblue;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0px;
+  a {
+    color: $coral;
+  }
+  a:hover {
+    color: $yellow;
+    text-decoration: underline;
+  }
+
+$lightblue: ##d8e4f7;
+$pink: #F1C9C2;
+
+.navbar {
+  justify-content: space-between;
+
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon-blue {
+.navbar .navbar-brand img {
+
+.navbar-blue {
   background-color: $lightblue;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
+
   width: 40px;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
