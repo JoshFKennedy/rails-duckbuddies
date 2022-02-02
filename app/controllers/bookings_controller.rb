@@ -11,13 +11,16 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Booking.new
+    @duck = Duck.find(params[:duck_id])
   end
 
   def create
     @booking = Booking.new(booking_params)
+    @duck = Duck.find(params[:duck_id])
     @booking.duck = @duck
+    @booking.user = current_user
     if @booking.save
-      redirect_to ducks_path(@duck)
+      redirect_to duck_path(@duck)
     else
       render :new
     end
@@ -30,7 +33,7 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:user_id, :duck_id)
+    params.require(:booking).permit(:start_date, :end_date)
   end
 
 end
