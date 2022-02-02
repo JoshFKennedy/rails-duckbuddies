@@ -1,16 +1,18 @@
 <h1 class="text-center">Duck Buddies</h1>
 
-<% @ducks.each do |duck| %>
-  <div class="card-duck">
-    <%= image_tag duck.photo %>
-    <div class="card-infos">
-      <div>
-        <h2><%= duck.name %></h2>
-        <p><%= duck.description %></p>
-      </div>
-      <div class="card-bottom">
-        <h2><%= link_to "More info ", duck_path(duck.id) %></h2>
-      </div>
+<div class="text-center">
+  <% @ducks.each do |duck| %>
+    <div class="card-duck">
+      <%= image_tag duck.photo %>
+      <div class="card-infos">
+        <div>
+          <h2><%= duck.name %></h2>
+          <p><%= duck.description %></p>
+        </div>
+        <div class="card-bottom">
+          <h2><%= link_to "More info ", duck_path(duck.id) %></h2>
+        </div>
+    </div>
   </div>
+  <% end %>
 </div>
-<% end %>
