@@ -40,3 +40,17 @@ a {
       color: #F7D635;
     }
 }
+
+// devise forms
+.form-inputs {
+  margin: auto;
+  width: 50%;
+}
+.btn {
+  background-color: $navy;
+  color: white;
+  border-radius: 4px;
+  &:hover {
+    background-color: $yellow;
+  }
+}
