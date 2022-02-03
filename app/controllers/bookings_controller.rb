@@ -3,7 +3,7 @@ class BookingsController < ApplicationController
   before_action :find_booking, only: %i[show]
 
   def index
-    @bookings = Booking.all
+    @bookings = Booking.where(user: current_user)
   end
 
   def show
@@ -12,6 +12,7 @@ class BookingsController < ApplicationController
   def new
     @booking = Booking.new
     @duck = Duck.find(params[:duck_id])
+
   end
 
   def create
