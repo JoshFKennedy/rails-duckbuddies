@@ -1,5 +1,8 @@
+<h1 class="text-center">My Duckventures!</h1>
+
 <div class="text-center">
-  <% @bookings.each do |booking| %>
-    <%= booking.start_date.day %><br>
-  <% end %>
+    <% @bookings.each do |booking| %>
+        <%= booking.start_date.strftime('%d-%m-%Y') + " ~~~ " + booking.end_date.strftime('%d-%m-%Y') %>
+      <br><br>
+    <% end %>
 </div>
