@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'ducks#index'
-  resources :ducks, only: %i[index show] do
+  resources :ducks, only: %i[index show new create] do
     resources :bookings, only: %i[new create show]
   end
   resources :bookings, only: %i[index]

@@ -1,0 +1,29 @@
+ <% console %>
+<h1 class="text-center">Pimp a Duck</h1>
+
+<div class="container center_div" style="width: 500px">
+  <%= simple_form_for [ @duck ] do |f| %>
+    <div class="p-3">
+      <%= f.label :name, "Name:" %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="p-3">
+      <%= f.label :age, "Age:" %>
+      <%= f.text_field :age %>
+    </div>
+    <div class="p-3">
+      <%= f.label :description, "Description:" %>
+      <%= f.text_area :description, data: { editor: 'markdown' }, rows: 10 %>
+    </div>
+    <div class="p-3">
+      <%= f.label :nationality, "Nationality:" %>
+      <%= f.text_field :nationality %>
+    </div>
+    <div class="p-3">
+      <%= f.input :photo, as: :file %>
+    </div>
+    <div class="p-3">
+      <%= f.submit "Pimp That Duck!", class: "btn btn-primary" %>
+    </div>
+<% end %>
+</div>
