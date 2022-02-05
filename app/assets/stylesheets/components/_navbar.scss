@@ -15,7 +15,7 @@ $pink: #F1C9C2;
     color: $coral;
   }
   a:hover {
-    color: $yellow;
+    color: #FF8860;
     text-decoration: underline;
   }
 }
@@ -41,4 +41,24 @@ $pink: #F1C9C2;
   html {
     scroll-behavior: smooth;
   }
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: #FF8860;
+  &:hover {
+    text-decoration: underline;
+    color: #FF8860;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FF8860;
+  &:hover {
+    text-decoration: underline;
+    color: #FF8860;
+  }
+}
+
+#pimp-link {
+  display: inline-block;
 }
