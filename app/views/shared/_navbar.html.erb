@@ -13,7 +13,7 @@
         <% if user_signed_in? %>
           <div class="links">
             <li class="nav-item" id="pimp-link">
-              <%= link_to "Pimp Yo' Duck!", class: "nav-link" %>
+              <%= link_to "Pimp Yo' Duck!", new_duck_path, class: "nav-link" %>
             </li>
             <li class="nav-item active" id="pimp-link">
               <%= link_to "My Bookings", bookings_path, class: "nav-link" %>

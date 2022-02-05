@@ -8,10 +8,24 @@ class DucksController < ApplicationController
   def show
   end
 
+  def new
+    @duck = Duck.new
+  end
+
+  def create
+    @duck = Duck.new(duck_params)
+    # @duck.user = current_user
+    if @duck.save
+      redirect_to duck_path(@duck)
+    else
+      render :new
+    end
+  end
+
   private
 
   def duck_params
-    params.require(:list).permit(:name)
+    params.require(:duck).permit(:name, :description, :age, :nationality, :photo)
   end
 
   def find_duck
