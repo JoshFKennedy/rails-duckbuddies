@@ -29,6 +29,8 @@ gem 'rename'
 # gem 'image_processing', '~> 1.2'
 gem 'flatpickr'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
