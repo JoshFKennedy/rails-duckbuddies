@@ -21,7 +21,7 @@ class BookingsController < ApplicationController
     @booking.duck = @duck
     @booking.user = current_user
     if @booking.save
-      redirect_to duck_path(@duck)
+      redirect_to bookings_path
     else
       render :new
     end
