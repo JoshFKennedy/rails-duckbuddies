@@ -35,9 +35,10 @@
 .card-duck .card-infos {
   padding: 16px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  // justify-content: center;
+  // align-items: flex-end;
   position: relative;
+  left: 100px;
 }
 .card-infos {
   position: absolute;
