@@ -1,8 +1,18 @@
 <h1 class="text-center">My Duckventures!</h1>
 
 <div class="text-center">
-    <% @bookings.each do |booking| %>
-        <%= booking.start_date.strftime('%d-%m-%Y') + " ~~~ " + booking.end_date.strftime('%d-%m-%Y') %>
-      <br><br>
-    <% end %>
+  <% @bookings.each do |booking| %>
+    <div class="card-duck">
+      <%= image_tag booking.duck.photo %>
+        <div class="card-infos">
+          <div>
+            <h2><%= booking.duck.name %></h2>
+            <p><%= "You will be enjoying this duck between " + booking.start_date.strftime('%A %B %d, %Y') + " and " + booking.end_date.strftime('%A %B %d, %Y') %></p>
+          </div>
+          <div class="card-bottom">
+            <h2><%= link_to "Duck details", duck_path(booking.id) %></h2>
+          </div>
+        </div>
+    </div>
+  <% end %>
 </div>
