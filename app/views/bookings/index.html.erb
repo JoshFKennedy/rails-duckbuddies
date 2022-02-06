@@ -10,7 +10,7 @@
             <p><%= "You will be enjoying this duck between " + booking.start_date.strftime('%A %B %d, %Y') + " and " + booking.end_date.strftime('%A %B %d, %Y') %></p>
           </div>
           <div class="card-bottom">
-            <h2><%= link_to "Duck details", duck_path(booking.id) %></h2>
+            <h2><%= link_to "Duck details", duck_path(booking.duck_id) %></h2>
           </div>
         </div>
     </div>

@@ -12,7 +12,6 @@ class BookingsController < ApplicationController
   def new
     @booking = Booking.new
     @duck = Duck.find(params[:duck_id])
-
   end
 
   def create
