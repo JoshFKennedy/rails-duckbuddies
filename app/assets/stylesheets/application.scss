@@ -34,10 +34,14 @@ a {
   text-decoration: none;
   font-family: 'Bubblegum Sans', cursive;
   color: #1F3D51;
+  background: url(https://www.andyhooke.co.uk/wp-content/uploads/2018/02/yellow-brushstroke.png);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
       font-family: 'Bubblegum Sans', cursive;
-      color: #F7D635;
+      color: $coral;
     }
 }
 

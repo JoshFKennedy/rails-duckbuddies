@@ -45,20 +45,28 @@ $pink: #F1C9C2;
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
   color: #FF8860;
+  background-image: none;
   &:hover {
     text-decoration: underline;
+    background-image: none;
     color: #FF8860;
   }
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #FF8860;
+  background-image: none;
   &:hover {
     text-decoration: underline;
+    background-image: none;
     color: #FF8860;
   }
 }
 
 #pimp-link {
   display: inline-block;
+}
+
+a.navbar-brand {
+  background-image: none;
 }
