@@ -8,17 +8,17 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 500px;
+  width: 525px;
   display: inline-block;
   padding: 50px;
   margin: 40px;
-  height: 378px;
+  height: 400px;
 }
 .card-duck > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
-  padding-bottom: 5px;
+  padding-bottom: 50px;
 }
 .card-duck h2 {
   font-size: 16px;
@@ -48,7 +48,7 @@
 }
 .card-bottom {
   position: absolute;
-  bottom: -40px;
+  top: 100px;
   width: 200px;
 }
 // fonts
