@@ -3,7 +3,9 @@
 <div class="text-center">
   <% @ducks.each do |duck| %>
     <div class="card-duck">
-      <%= image_tag duck.photo %>
+      <% if duck.photo.attached? %>
+        <%= cl_image_tag duck.photo.key %>
+      <% end %>
       <div class="card-infos">
         <div>
           <h2><%= duck.name %></h2>

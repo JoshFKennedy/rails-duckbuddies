@@ -1,5 +1,7 @@
 <p class="text-center">
-  <%= image_tag @duck.photo, :class => "avatar-profile-xlarge" %>
+  <% if @duck.photo.attached? %>
+    <%= cl_image_tag @duck.photo.key %>
+  <% end %>
 </p>
 
 <p class="text-center">
