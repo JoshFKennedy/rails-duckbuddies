@@ -1,26 +1,26 @@
- <% console %>
+
 <h1 class="text-center">Pimp a Duck</h1>
 
-<div class="container center_div" style="width: 500px">
+<div class="row justify-content-center">
   <%= simple_form_for [ @duck ] do |f| %>
+    <%= f.label :name, "Name:" %>
     <div class="p-3">
-      <%= f.label :name, "Name:" %>
       <%= f.text_field :name %>
     </div>
+    <%= f.label :age, "Age:" %>
     <div class="p-3">
-      <%= f.label :age, "Age:" %>
       <%= f.text_field :age %>
     </div>
+    <%= f.label :description, "Description:" %>
     <div class="p-3">
-      <%= f.label :description, "Description:" %>
       <%= f.text_area :description, data: { editor: 'markdown' }, rows: 10 %>
     </div>
+    <%= f.label :nationality, "Nationality:" %>
     <div class="p-3">
-      <%= f.label :nationality, "Nationality:" %>
       <%= f.text_field :nationality %>
     </div>
     <div class="p-3">
-      <%= f.input :photo, as: :file %>
+      <%= f.input :photo, as: :file, type: "btn btn-primary" %>
     </div>
     <div class="p-3">
       <%= f.submit "Pimp That Duck!", class: "btn btn-primary" %>

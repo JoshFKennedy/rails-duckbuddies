@@ -59,3 +59,14 @@ a {
     background-color: $yellow;
   }
 }
+input[type="text" i] {
+  width:95%;
+}
+input[type=file]::file-selector-button {
+  background-color: $navy;
+  color: white;
+  border-radius: 4px;
+  &:hover {
+    background-color: $yellow;
+  }
+}
