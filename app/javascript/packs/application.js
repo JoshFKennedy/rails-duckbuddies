@@ -8,6 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import { toggleDateInputs } from '../components/booking';
+import flatpickr from "flatpickr";
 
 Rails.start()
 Turbolinks.start()
