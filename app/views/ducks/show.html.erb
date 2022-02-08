@@ -1,8 +1,8 @@
-<p class="text-center">
-  <% if @duck.photo.attached? %>
-    <%= cl_image_tag @duck.photo.key %>
-  <% end %>
-</p>
+
+<div class="text-center">
+  <%= cl_image_tag @duck.photo.key, class: "text-center avatar-profile-xlarge" %>
+</div>
+
 
 <p class="text-center">
   <strong>Name:</strong>
@@ -27,6 +27,7 @@
 <div class="text-center">
   <%= link_to 'Book this duck', new_duck_booking_path(@duck) %>
 </div>
+&nbsp;
 <div class="text-center">
   <%= link_to 'Back', ducks_path %>
 </div>
