@@ -1,6 +1,6 @@
 <h1 class="text-center">Book a Duck</h1>
 
-<div class="container center_div" style="width: 500px">
+<div class="container center_div" style="width: 500px" id='duck-booking-dates' data-unavailable="<%= @duck.unavailable_dates.to_json %>">
   <%= simple_form_for [ @duck, @booking ] do |f| %>
     <div class="p-3">
       <%= f.label :start_date, "Start Date:" %>
