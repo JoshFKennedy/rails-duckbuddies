@@ -1,19 +1,19 @@
 <h1 class="text-center">My Duckventures!</h1>
 
-<div class="text-center">
+<div>
   <% @bookings.each do |booking| %>
-    <div class="card-duck">
+    <div class="booked-duck">
       <%= image_tag booking.duck.photo %>
-        <div class="card-infos">
-          <div>
-            <h2><%= booking.duck.name %></h2>
-            <p><em><%= booking.start_date.strftime('%A %B %d, %Y') + " -"%></em></p>
-            <p><em><%= booking.end_date.strftime('%A %B %d, %Y') %></em></p>
-          </div>
-          <div class="card-bottom">
-            <h2><%= link_to "Duck details", duck_path(booking.duck_id) %></h2>
-          </div>
-        </div>
+      <div class="booked-duck-details">
+        <h2><%= link_to booking.duck.name, duck_path(booking.duck_id) %></h2>
+        <p><%= booking.duck.description %></p>
+      </div>
+      <div class="booked-duck-dates">
+        <p><em>Booked between</em></p>
+        <p><em><%= booking.start_date.strftime('%A %B %d, %Y') %></em></p>
+        <p class="ampersand"><em>&</em></p>
+        <p><em><%= booking.end_date.strftime('%A %B %d, %Y') %></em></p>
+      </div>
     </div>
   <% end %>
 </div>
