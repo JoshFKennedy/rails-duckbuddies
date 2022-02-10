@@ -1,8 +1,8 @@
 <h1 class="text-center">My Duckventures!</h1>
 
-<div class="text-center">
+<div>
   <% @bookings.each do |booking| %>
-    <div class="card-duck">
+    <div class="booked-duck">
       <%= image_tag booking.duck.photo %>
       <div class="booked-duck-details">
         <h2><%= link_to booking.duck.name, duck_path(booking.duck_id) %></h2>

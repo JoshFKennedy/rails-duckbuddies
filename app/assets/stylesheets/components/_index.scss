@@ -55,3 +55,56 @@
 h1 {
   color: #1F3D51;
 }
+
+
+.booked-duck {
+  overflow: hidden;
+  height: 240px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin: 100px 350px;
+}
+
+.booked-duck img {
+  height: 100%;
+  width: 240px;
+  object-fit: cover;
+}
+
+.booked-duck h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.booked-duck p {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.booked-duck .booked-duck-details {
+  width: 1200px;
+  padding: 50px;
+}
+
+.booked-duck .booked-duck-dates {
+  width: 1200px;
+  padding: 50px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.booked-duck .booked-duck-dates p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.booked-duck .booked-duck-dates .ampersand {
+  line-height: 0.75;
+}
