@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
 
-  before_action :find_booking, only: %i[show]
+  before_action :find_booking, only: %i[show destroy]
 
   def index
     @bookings = Booking.where(user: current_user)
@@ -23,6 +23,15 @@ class BookingsController < ApplicationController
       redirect_to bookings_path
     else
       render :new
+    end
+  end
+
+  def destroy
+    if @booking.user_id == current_user.id
+      @booking.destroy
+      redirect_to bookings_path
+    else
+      redirect_to ducks_path
     end
   end
 
