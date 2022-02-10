@@ -1,6 +1,6 @@
 <h1 class="text-center">My Duckventures!</h1>
 
-<div>
+<div class="duck-body">
   <% @bookings.each do |booking| %>
     <div class="booked-duck">
       <%= image_tag booking.duck.photo %>
@@ -9,9 +9,8 @@
         <p><%= booking.duck.description %></p>
       </div>
       <div class="booked-duck-dates">
-        <p><em>Booked between</em></p>
         <p><em><%= booking.start_date.strftime('%A %B %d, %Y') %></em></p>
-        <p class="ampersand"><em>&</em></p>
+        <p class="ampersand"><em>to</em></p>
         <p><em><%= booking.end_date.strftime('%A %B %d, %Y') %></em></p>
       </div>
       <div>

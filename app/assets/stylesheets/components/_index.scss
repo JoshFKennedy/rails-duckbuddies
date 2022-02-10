@@ -56,15 +56,25 @@ h1 {
   color: #1F3D51;
 }
 
+// my bookings
+.duck-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .booked-duck {
   overflow: hidden;
-  height: 240px;
+  width: 75%;
+  height: 200px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  margin: 100px 350px;
+  justify-content: center;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .booked-duck img {
@@ -74,26 +84,32 @@ h1 {
 }
 
 .booked-duck h2 {
-  font-size: 32px;
+  // font-size: 32px;
   font-weight: bold;
   margin: 0;
 }
 
 .booked-duck p {
-  font-size: 24px;
+  // font-size: 24px;
   line-height: 1.4;
   margin-bottom: 0;
   margin-top: 8px;
 }
 
 .booked-duck .booked-duck-details {
-  width: 1200px;
-  padding: 50px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .booked-duck .booked-duck-dates {
-  width: 1200px;
   padding: 50px;
+  width: 1200px;
   margin-left: 100px;
   text-align: center;
 }
