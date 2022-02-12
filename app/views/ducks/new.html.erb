@@ -4,19 +4,19 @@
 <div class="row justify-content-center">
   <%= simple_form_for [ @duck ] do |f| %>
     <%= f.label :name, "Name:" %>
-    <div class="p-3">
+    <div class="p-3" style="width: 500px">
       <%= f.text_field :name %>
     </div>
     <%= f.label :age, "Age:" %>
-    <div class="p-3">
+    <div class="p-3" style="width: 500px">
       <%= f.text_field :age %>
     </div>
     <%= f.label :description, "Description:" %>
     <div class="p-3">
-      <%= f.text_area :description, data: { editor: 'markdown' }, rows: 10 %>
+      <%= f.text_area :description, data: { editor: 'markdown' }, rows: 3, style: 'width:500px' %>
     </div>
     <%= f.label :nationality, "Nationality:" %>
-    <div class="p-3">
+    <div class="p-3" style="width: 500px">
       <%= f.text_field :nationality %>
     </div>
     <div class="p-3">
