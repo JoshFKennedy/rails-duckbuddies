@@ -13,7 +13,7 @@
         <p class="ampersand"><em>to</em></p>
         <p><em><%= booking.end_date.strftime('%A %B %d, %Y') %></em></p>
       </div>
-      <div>
+      <div class="cancel-link">
         <%= link_to "Cancel booking", booking_path(booking.id), method: :delete %>
       </div>
     </div>
