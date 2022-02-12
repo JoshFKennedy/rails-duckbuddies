@@ -14,7 +14,7 @@ wonder_duck = Duck.new({
   age: 5000,
   nationality: 'Themysciran'
 })
-wonder_duck.photo.attach(io: File.open('app/assets/images/wonder-duck.jpg'), filename: 'wonder-duck.jpg', content_type: 'image/jpg')
+wonder_duck.photo.attach(io: File.open(Rails.root.join('app','assets','images','wonder-duck.jpg')), filename: 'wonder-duck.jpg', content_type: 'image/jpg')
 wonder_duck.save
 
 jean_duck_picard = Duck.new({
@@ -23,7 +23,7 @@ jean_duck_picard = Duck.new({
   age: 53,
   nationality: 'French'
 })
-jean_duck_picard.photo.attach(io: File.open('app/assets/images/jean-duck-picard.jpg'), filename: 'jean-duck-picard.jpg', content_type: 'image/jpg')
+jean_duck_picard.photo.attach(io: File.open(Rails.root.join('app','assets','images','jean-duck-picard.jpg')), filename: 'jean-duck-picard.jpg', content_type: 'image/jpg')
 jean_duck_picard.save
 
 kratos_duck = Duck.new({
@@ -32,7 +32,7 @@ kratos_duck = Duck.new({
   age: 1047,
   nationality: 'Greek'
 })
-kratos_duck.photo.attach(io: File.open('app/assets/images/kratos-duck.jpg'), filename: 'kratos-duck.jpg', content_type: 'image/jpg')
+kratos_duck.photo.attach(io: File.open(Rails.root.join('app','assets','images','kratos-duck.jpg')), filename: 'kratos-duck.jpg', content_type: 'image/jpg')
 kratos_duck.save
 
 iron_duck = Duck.new({
@@ -41,7 +41,7 @@ iron_duck = Duck.new({
   age: 49,
   nationality: 'American'
 })
-iron_duck.photo.attach(io: File.open('app/assets/images/iron-duck.jpg'), filename: 'iron-duck.jpg', content_type: 'image/jpg')
+iron_duck.photo.attach(io: File.open(Rails.root.join('app','assets','images','iron-duck.jpg')), filename: 'iron-duck.jpg', content_type: 'image/jpg')
 iron_duck.save
 
 anonymous_duck = Duck.new({
@@ -50,7 +50,7 @@ anonymous_duck = Duck.new({
   age: ??,
   nationality: 'Who knows'
 })
-anonymous_duck.photo.attach(io: File.open('app/assets/images/anonymous-duck.jpg'), filename: 'anonymous-duck.jpg', content_type: 'image/jpg')
+anonymous_duck.photo.attach(io: File.open(Rails.root.join('app','assets','images','anonymous-duck.jpg')), filename: 'anonymous-duck.jpg', content_type: 'image/jpg')
 anonymous_duck.save
 
 gollum_duck = Duck.new({
@@ -59,10 +59,9 @@ gollum_duck = Duck.new({
   age: 589,
   nationality: 'Stoorish'
 })
-gollum_duck.photo.attach(io: File.open('app/assets/images/gollum-duck.jpg'), filename: 'gollum-duck.jpg', content_type: 'image/jpg')
+gollum_duck.photo.attach(io: File.open(Rails.root.join('app','assets','images','gollum-duck.jpg')), filename: 'gollum-duck.jpg', content_type: 'image/jpg')
 gollum_duck.save
-# @message.image.attach(io: File.open('/path/to/file'), filename: 'file.pdf', content_type: 'application/pdf')
-
+# @message.image.attach(io: File.open('/path/to/file'), filename: 'file.pdf', content_type: Rails.root.join('app','icatio','/pdf')','
 # require "open-uri"
 
 # file = URI.open('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg')
